@@ -13,6 +13,7 @@
 ⚠️ **Warning**: Teleporting into certain scripted/event-heavy passages can **break progression** or cause unexpected behavior. Use responsibly.
 ⚠️ **Spoilers**: This tool exposes hidden scenes and locations.
 
+---
 
 ## 💡 What is this
 

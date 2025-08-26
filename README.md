@@ -1,4 +1,4 @@
-# 🌌 Ketsman's DoL **Megatravel**
+# 🌌 DoL **Megatravel**
 
 **Instant Teleport & Passage Jumping** for *Degrees of Lewdity*
 

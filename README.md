@@ -13,25 +13,6 @@
 ⚠️ **Warning**: Teleporting into certain scripted/event-heavy passages can **break progression** or cause unexpected behavior. Use responsibly.
 ⚠️ **Spoilers**: This tool exposes hidden scenes and locations.
 
----
-
-## 🧭 Table of Contents
-
-* [What is this](#-what-is-this)
-* [Features](#-features)
-* [Installation](#-installation)
-* [Quick Start](#-quick-start)
-* [Hotkeys](#-hotkeys)
-* [How it works](#-how-it-works)
-* [Storage](#-storage)
-* [Compatibility](#-compatibility)
-* [FAQ](#-faq)
-* [Known Limitations](#-known-limitations)
-* [Troubleshooting](#-troubleshooting)
-* [Contributing & License](#-contributing--license)
-* [Community](#-community)
-
----
 
 ## 💡 What is this
 

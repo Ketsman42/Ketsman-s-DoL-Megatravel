@@ -22,14 +22,13 @@
 * provides an **Instant Teleport modal menu** opened via hotkey;
 * allows you to **jump instantly** ("TP") to any passage;
 * supports **favorites** (★PIN) and **recents**;
-* supports categories (Town, School, Forest, Lake/River, Farm, Temple, Prison, Dungeons, Home/Orphanage, Work/Shops, Events/Scenes, Other).
 
 ---
 
 ## ✨ Features
 
 * **Instant Teleport menu** — hotkey based, no UI clutter.
-* **Search by passage name** + filter by category.
+* **Search by passage name** 
 * **Favorites (★PIN)** — pin important locations.
 * **Recents** — quick access to the last 20 teleports.
 * **Lightweight** — no save interference, uses only `localStorage`.

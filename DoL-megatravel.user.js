@@ -278,7 +278,7 @@
     const q = (input?.value || "").toLowerCase();
     const catSel = document.querySelector("#mt-category");
     const onlyLoc = document.querySelector("#mt-onlylocations")?.checked || false;
-
+    
     let items = getAllPassages();
     items = items.map(p => ({ ...p, category: categorisePassage(p.name, p.tags) }));
 
@@ -289,7 +289,7 @@
       if (ap !== bp) return bp - ap;
       return a.name.localeCompare(b.name);
     });
-
+    
     if (q) items = items.filter(p => p.name.toLowerCase().includes(q));
 
     const selVal = catSel?.value || "all";
@@ -316,13 +316,13 @@
   function rebuildPassageList(modal) {
     allFilteredItems = filterPassages();
     currentPage = 1;
-
+    
     const ul = modal.querySelector("#mt-list");
     ul.innerHTML = '';
-
+    
     const countEl = modal.querySelector("#mt-count");
     if (countEl) countEl.textContent = `Found: ${allFilteredItems.length}`;
-
+    
     if (!allFilteredItems.length) {
       const empty = document.createElement("div");
       empty.className = "mt-empty";
@@ -330,7 +330,7 @@
       ul.appendChild(empty);
       return;
     }
-
+    
     renderPassagesPage(modal);
   }
 
@@ -338,9 +338,9 @@
     const ul = modal.querySelector("#mt-list");
     const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
     const endIndex = Math.min(startIndex + ITEMS_PER_PAGE, allFilteredItems.length);
-
+    
     const fragment = document.createDocumentFragment();
-
+    
     for (let i = startIndex; i < endIndex; i++) {
       const p = allFilteredItems[i];
       const li = document.createElement("li");
@@ -360,9 +360,9 @@
       li.appendChild(fav);
       fragment.appendChild(li);
     }
-
+    
     ul.appendChild(fragment);
-
+    
     const loadingEl = modal.querySelector("#mt-loading");
     if (loadingEl) {
       loadingEl.style.display = endIndex >= allFilteredItems.length ? "none" : "block";
@@ -372,7 +372,7 @@
   function loadMorePassages(modal) {
     const totalPages = Math.ceil(allFilteredItems.length / ITEMS_PER_PAGE);
     if (currentPage >= totalPages) return;
-
+    
     currentPage++;
     renderPassagesPage(modal);
   }
